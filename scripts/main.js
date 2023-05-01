@@ -1,28 +1,16 @@
+const layout = [];
+layout.push('Website Prototype', './images/thumbnails/socket-thumbnail.png"', 'Today we are writing a website from scratch as a portpolio piece');
 
-let blogName = "My First Blog!";
-let description = "WOAH LOOK AT WHAT WE'RE DOING IN VALHIEIM!";
-let imgPath = "./images/gobble.png"
+const post = document.querySelector('.projects');
+for (let i = 0; i < 4; i++)
+{
+    let blog = document.createElement('div');
+    blog.classList.add('blog-post');
+    blog.innerHTML = `
+        <h3>${layout[0]}</h3> 
+        <img src="${layout[1]}"/>
+        <p>${layout[2]}</p>
+    `;
 
-const blogPosts = document.querySelectorAll('.blog-post')
-blogPosts.forEach( blogPost => blogPost.children[1].src = imgPath);
-
-document.querySelector('.featured-blog-post').children[1].src = imgPath;
-
-const post = {
-    title: blogName,
-    description,
-    imgPath,
-};
-
-const newBlog = document.createElement('div');
-newBlog.classList.add('blog-post');
-newBlog.innerHTML = `
-    <h3>${post.title}</h3> 
-    <img src="${post.imgPath}"/>
-    <p>${post.description}</p>
-`;
-
-const recentPosts = document.querySelector('.recent-blogs');
-recentPosts.insertAdjacentElement('beforeend', newBlog);
-
-console.log(newBlog);
+    post.insertAdjacentElement('beforeend', blog);
+}

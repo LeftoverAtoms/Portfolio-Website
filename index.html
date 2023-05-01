@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<body>
-
 <head>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/sidebar.css" />
+	<link rel="stylesheet" href="css/profile.css" />
 </head>
 
 <main>
-	<div class="sidebar">
+	<div class="profile">
 
-		<div class="profile">
-			<img src="./images/profile_ghost.png">
+		<div class="profile-general">
+			<img src="./images/icons/profile-picture.png">
 			<span>Adam Calvelage</span>
-			<div class="links">
+			<div class="profile-links">
 				<a href="https://github.com/LeftoverAtoms">
 					<img src="./images/icons/github.png">
 				</a>
@@ -23,26 +21,42 @@
 			</div>
 		</div>
 
-		<div class="skills">
+		<div class="profile-skills">
 			<span>Skills</span>
-			<div class="skills-flex">
+			<div class="profile-skills-items">
 				<span>C#</span>
+				<span>C++</span>
+				<span>LUA</span>
+				<span>HTML</span>
+				<span>CSS</span>
+				<span>JS</span>
 				<span>Unity</span>
 				<span>Blender</span>
 			</div>
 		</div>
 
-		<div class="description">
+		<div class="profile-bio">
 			<span>Bio</span>
 			<span>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-				Porro obcaecati totam suscipit velit qui earum! 
-				Quidem doloribus ducimus deserunt? 
-				Facere, quam obcaecati sunt sequi molestiae aut vero tenetur nulla error.
+				Software developer looking for opportunities out in the field
 			</span>
 		</div>
+	</div>
 
+	<div class="blog">
+		<div class="blog-item">
+			<span>Sumi Riko - Sockets</span>
+			<span style="width: 176px;">
+				Wrote some code that sockets objects
+			</span>
+			<img src="./images/thumbnails/socket-thumbnail.png" style="width: 208px; height: 208px; border-radius: 8px;">
+		</div>
+		<div class="blog-item">
+			<span>Sumi Riko - Conveyors</span>
+			<span style="width: 176px;">
+				Wrote some code that moves objects along a path
+			</span>
+			<img src="./images/thumbnails/conveyor-thumbnail.png" style="width: 208px; height: 208px; border-radius: 8px;">
+		</div>
 	</div>
 </main>
-
-</html>

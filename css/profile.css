@@ -1,0 +1,81 @@
+.profile-general
+{
+	flex-direction: column;
+	gap: 16px;
+
+	display: flex;
+
+	border-radius: 8px 8px 0 0;
+	padding: 24px;
+
+	background: #2a2a2a;
+}
+.profile-general img
+{
+	border-radius: 96px;
+	width: 192px;
+	height: 192px;
+}
+.profile-general span
+{
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+.profile-links
+{
+	gap: 12px;
+
+	display: flex;
+}
+.profile-links img
+{
+	width: 24px; 
+	height: 24px;
+}
+
+.profile-skills, .profile-bio
+{
+	flex-direction: column;
+	gap: 16px;
+
+	display: flex;
+
+	padding: 24px;
+
+	background: #2a2a2a;
+}
+.profile-skills-items
+{
+	flex-wrap:wrap;
+	column-gap: 4px;
+	row-gap: 8px;
+
+	display: flex;
+}
+/* Title */
+.profile-bio > span:first-child, .profile-skills > span:first-child
+{
+	width: max-content;
+	
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+/* Content */
+.profile-skills-items span, .profile-bio span:last-child
+{
+	border-radius: 8px;
+	height: max-content;
+	padding: 8px;
+
+	background: #555555;
+
+	font-size: 16px;
+	color: white;
+}
+/* Roundover end */
+.profile-bio
+{
+	border-radius: 0 0 8px 8px;
+}
