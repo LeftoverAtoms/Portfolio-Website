@@ -1,0 +1,177 @@
+
+
+
+/* ---PROFILE--- */
+
+
+
+.profile
+{
+      flex-direction: column; 
+	gap: 2px;
+
+	display: flex;
+
+	width: 384px;
+	min-width: 384px;
+	height: max-content;
+}
+
+.profile-content
+{
+	flex-direction: column;
+	gap: 16px;
+
+	display: flex;
+
+	border-radius: 8px 8px 0 0;
+	padding: 24px;
+
+	background: #2a2a2a;
+}
+.profile-content img
+{
+	border-radius: 96px;
+	width: 192px;
+	height: 192px;
+}
+.profile-content span
+{
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+
+.social-links
+{
+	gap: 12px;
+
+	display: flex;
+}
+.social-links img
+{
+	width: 24px; 
+	height: 24px;
+}
+
+.bio
+{
+	padding: 24px;
+
+	background: #2a2a2a;
+
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.75)
+}
+
+.skills
+{
+	flex-direction: column;
+	gap: 16px;
+
+	display: flex;
+
+	padding: 24px;
+	border-radius: 0 0 8px 8px;
+
+	background: #2a2a2a;
+}
+.skills-title
+{
+	width: max-content;
+	
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+.skills-items
+{
+	flex-wrap: wrap;
+	column-gap: 4px;
+	row-gap: 8px;
+
+	display: flex;
+}
+
+.skill-item
+{
+	border-radius: 8px;
+	height: max-content;
+	padding: 8px;
+
+	background: #555555;
+
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.75)
+}
+
+
+
+/* ---BLOGS--- */
+
+
+
+.blog
+{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+      gap: 2px;
+
+      display: flex;
+
+	margin: 64px 32px 32px 0;
+	width: calc(100vw - 480px);
+      min-width: 384px;
+	height: max-content;
+}
+
+.blog-entry
+{
+	align-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	display: flex;
+
+	border-radius: 8px;
+	box-sizing: border-box;
+	max-width: 384px; min-width: 384px;
+	height: 176px;
+
+	background: #2a2a2a;
+}
+.blog-entry-title
+{
+	width: 50%;
+	margin: 16px 0 0 16px;
+	
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+.blog-entry-date
+{
+	margin: 8px 0 0 16px;
+
+	font-size: 10px;
+	color: rgba( 255, 255, 255, 0.75);
+}
+.blog-entry-description
+{
+	width: 50%;
+	margin: 16px 0 0 16px;
+
+	font-size: 12px;
+	color: rgba( 255, 255, 255, 0.5);
+}
+.blog-entry img
+{
+	width: 160px;
+	height: 160px;
+	border-radius: 8px;
+	margin: 8px;
+
+	object-fit: cover;
+	object-position: 0;
+}
