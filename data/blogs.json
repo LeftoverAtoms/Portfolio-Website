@@ -1,5 +1,14 @@
 {
-    "title": "Website Prototype",
-    "description": "Lets shed some light on the development process of designing my own personal website",
-    "date": "5/2/2023"
+    "b-1":
+    {
+        "title": "Website Prototype",
+        "description": "Lets shed some light on the development process of designing my own personal website",
+        "date": "Date N/A"
+    },
+    "b-2":
+    {
+        "title": "SumiRiko",
+        "description": "Developed virtual job training software using Unity XR",
+        "date": "Date N/A"
+    }
 }

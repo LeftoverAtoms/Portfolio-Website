@@ -1,80 +1,108 @@
+@keyframes jumpy {
+	0%   { animation-timing-function: ease-out; transform: translateY(0px);    }
+	25%  { animation-timing-function: ease-in;  transform: translateY(-8px); }
+	50%  { animation-timing-function: ease-out; transform: translateY(0px);    }
+	85%  { animation-timing-function: ease-in;  transform: translateY(-2px); }
+	100% { animation-timing-function: ease-out; transform: translateY(0px);    }
+}
 
 
 
-/* ---PROFILE--- */
+@media only screen and (max-width: 1344px)
+{
+	.blogs { width: 384px; }
+}
 
 
 
 .profile
 {
       flex-direction: column; 
-	gap: 2px;
+	row-gap: 4px;
 
 	display: flex;
 
 	width: 384px;
-	min-width: 384px;
-	height: max-content;
+	height: 728px;
+
+	/* Must "align-self: start;" and use this calc if height is not identical to blog height */
+	/* margin-top: calc(((100vh - 728px) * 0.5) - 32px); */
+
+	cursor: default;
 }
-
-.profile-content
+.profile > *
 {
-	flex-direction: column;
-	gap: 16px;
-
-	display: flex;
-
-	border-radius: 8px 8px 0 0;
 	padding: 24px;
 
 	background: #2a2a2a;
 }
-.profile-content img
+.profile div:first-child
+{
+	border-radius: 8px 8px 0 0;
+}
+.profile div:last-child
+{
+	border-radius: 0 0 8px 8px;
+}
+
+
+
+.identity
+{
+	flex-direction: column;
+	row-gap: 16px;
+
+	display: flex;
+}
+.portrait
 {
 	border-radius: 96px;
 	width: 192px;
 	height: 192px;
 }
-.profile-content span
+.name
 {
 	font-size: 32px;
 	font-weight: bold;
 	color: white;
 }
 
+
+
 .social-links
 {
-	gap: 12px;
+	flex-direction: row;
+	column-gap: 8px;
 
 	display: flex;
 }
-.social-links img
+.social-links a img
 {
 	width: 24px; 
 	height: 24px;
 }
+.social-links a:hover
+{
+	animation-name: jumpy;
+	animation-duration: 500ms;
+}
+
+
 
 .bio
 {
-	padding: 24px;
-
-	background: #2a2a2a;
-
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.75)
 }
 
+
+
 .skills
 {
 	flex-direction: column;
-	gap: 16px;
+	row-gap: 16px;
 
 	display: flex;
-
-	padding: 24px;
-	border-radius: 0 0 8px 8px;
-
-	background: #2a2a2a;
 }
 .skills-title
 {
@@ -86,17 +114,16 @@
 }
 .skills-items
 {
+	flex-direction: row;
 	flex-wrap: wrap;
 	column-gap: 4px;
 	row-gap: 8px;
 
 	display: flex;
 }
-
 .skill-item
 {
 	border-radius: 8px;
-	height: max-content;
 	padding: 8px;
 
 	background: #555555;
@@ -104,47 +131,65 @@
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.75)
 }
+.skill-item:hover
+{
+	animation-name: jumpy;
+	animation-duration: 500ms;
+}
 
 
 
-/* ---BLOGS--- */
 
 
 
-.blog
+
+
+
+.blogs
 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-      gap: 2px;
+	align-content: start;
+	gap: 8px;
 
-      display: flex;
+	display: flex;
 
-	margin: 64px 32px 32px 0;
-	width: calc(100vw - 480px);
-      min-width: 384px;
-	height: max-content;
+	overflow-y: scroll;
+
+	/* margin-top: 64px; */
+	box-sizing: border-box;
+	width: 864px;
+	height: 728px;
 }
+
+
 
 .blog-entry
 {
-	align-content: space-between;
+	all: unset;
+
+	position: relative;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-content: space-between;
 
 	display: flex;
 
 	border-radius: 8px;
 	box-sizing: border-box;
-	max-width: 384px; min-width: 384px;
+	width: 384px;
+	max-width: 384px;
 	height: 176px;
+	padding: 16px;
 
 	background: #2a2a2a;
+	cursor: pointer;
 }
 .blog-entry-title
 {
 	width: 50%;
-	margin: 16px 0 0 16px;
+	margin-bottom: 8px;
 	
 	font-size: 16px;
 	font-weight: bold;
@@ -152,26 +197,34 @@
 }
 .blog-entry-date
 {
-	margin: 8px 0 0 16px;
+	margin-bottom: 16px;
 
 	font-size: 10px;
 	color: rgba( 255, 255, 255, 0.75);
 }
 .blog-entry-description
 {
+	margin-bottom: 16px;
 	width: 50%;
-	margin: 16px 0 0 16px;
 
 	font-size: 12px;
 	color: rgba( 255, 255, 255, 0.5);
 }
 .blog-entry img
 {
-	width: 160px;
-	height: 160px;
-	border-radius: 8px;
-	margin: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
 
+	height: 176px;
+	border-radius: 0 8px 8px 0;
+
+
+	aspect-ratio: 1;
 	object-fit: cover;
-	object-position: 0;
+}
+.blog-entry:hover
+{
+	animation-name: jumpy;
+	animation-duration: 500ms;
 }

@@ -1,0 +1,1 @@
+Reduce size of json by removing unnecessary characters to load pages faster.
