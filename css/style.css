@@ -9,10 +9,8 @@
 */
 main
 {
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 32px;
 
 	display: flex;
 
@@ -25,9 +23,25 @@ main
 	font-family: 'Roboto', sans-serif; /* Default font */
 }
 
-@media only screen and (max-width: 904px)
+.content
+{
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+	gap: 32px;
+
+	display: flex;
+}
+
+@media only screen and (max-width: 864px)
 {
 	main
+	{
+		justify-content: center;
+		align-items: start;
+	}
+
+	.content
 	{
 		flex-direction: column;
 		flex-wrap: wrap;

@@ -17,7 +17,6 @@
 .profile
 {
       flex-direction: column; 
-	align-self: start;
 	row-gap: 4px;
 
 	display: flex;
@@ -27,7 +26,7 @@
 	height: max-content;
 
 	/* Must "align-self: start;" and use this calc if height is not identical to blog height */
-	margin-top: calc(((100vh - 728px) * 0.5) - 32px);
+	/* margin-top: calc(((100vh - 728px) * 0.5) - 32px); */
 
 	cursor: default;
 }
@@ -159,7 +158,7 @@
 
 	box-sizing: border-box;
 	width: 864px;
-	height: 728px;
+	height: max-content;
 }
 
 
@@ -236,7 +235,7 @@
 
 
 
-@media only screen and (max-width: 1256px)
+@media only screen and (max-width: 1336px)
 {
 	.blogs
 	{
@@ -244,7 +243,7 @@
 	}
 }
 
-@media only screen and (max-width: 904px)
+@media only screen and (max-width: 864px)
 {
 	.profile
 	{
