@@ -27,5 +27,10 @@ main
 
 @media only screen and (max-width: 1344px)
 {
-	main { flex-direction: column; flex-wrap: wrap; }
+	main
+	{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: start;
+	}
 }
