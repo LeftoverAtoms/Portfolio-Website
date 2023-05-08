@@ -158,7 +158,7 @@
 
 	box-sizing: border-box;
 	width: 864px;
-	height: max-content;
+	height: 736px;
 }
 
 
@@ -239,7 +239,10 @@
 {
 	.blogs
 	{
+		overflow-y: auto;
+
 		width: 384px;
+		height: max-content;
 	}
 }
 
