@@ -1,9 +1,10 @@
 {
       "portrait": "./images/icons/profile-picture.png",
       "name": "Adam Calvelage",
+      "career": "Junior Software Developer",
+      "bio": "Eager to learn and improve mastery.",
       "links": {
             "github":  { "link": "https://github.com/LeftoverAtoms",  "icon": "./images/icons/github.png"  },
             "twitter": { "link": "https://twitter.com/LeftoverAtoms", "icon": "./images/icons/twitter.png" } },
-      "bio": "Junior Software Developer eager to learn and improve mastery.",
       "skills": ["C#", "C++", "LUA", "HTML", "CSS", "JS", "Unity", "Blender"]
 }

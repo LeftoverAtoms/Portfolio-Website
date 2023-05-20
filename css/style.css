@@ -3,49 +3,12 @@
 	color-scheme: dark; /* Scrollbar */
 }
 
-/* 
-	Profile and blogs are placed at each side respectively.
-	Profile remains at the top and blogs wrap below it on mobile.
-*/
 main
 {
-	justify-content: center;
-	align-items: center;
-
-	display: flex;
-
-	box-sizing: border-box;
+	min-width: 100vw;
 	min-height: 100vh;
-	padding: 32px;
 
 	background: #111111;
 
 	font-family: 'Roboto', sans-serif; /* Default font */
-}
-
-.content
-{
-	flex-direction: row;
-	justify-content: center;
-	align-items: start;
-	gap: 32px;
-
-	display: flex;
-}
-
-@media only screen and (max-width: 864px)
-{
-	main
-	{
-		justify-content: center;
-		align-items: start;
-	}
-
-	.content
-	{
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: start;
-		align-items: start;
-	}
 }

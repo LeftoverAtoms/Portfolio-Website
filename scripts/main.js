@@ -8,14 +8,9 @@ async function LoadProfile()
 		<div class="identity">
 			<img class="portrait" src='${data.portrait}' />
 			<span class="name">${data.name}</span>
-			<div class="social-links">
-				<a href="${data.links.github.link}"><img src="${data.links.github.icon}" alt="Github logo"></a>
-				<a href="${data.links.twitter.link}"><img src="${data.links.twitter.icon}" alt="Twitter Logo"></a>
-			</div>
+			<span class="career">${data.career}</span>
 		</div>
-		<span class="bio">${data.bio}</span>
 		<div class="skills">
-			<span class="skills-title">Skills</span>
 			<div class="skills-items">
 				${data.skills.map(skill => `<span class="skill-item">${skill}</span>`).join('\n')}
 			</div>
