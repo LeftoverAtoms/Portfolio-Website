@@ -1,5 +1,4 @@
-.profile
-{
+.profile {
       flex-direction: column; 
 	row-gap: 4px;
 
@@ -12,73 +11,59 @@
 	cursor: default;
 }
 /* Direct children */
-.profile > *
-{
+.profile > * {
 	padding: 16px;
 
 	background: #2a2a2a;
 }
-.profile div:first-child
-{
+.profile div:first-child {
 	border-radius: 8px 8px 0 0;
 }
-.profile div:last-child
-{
+.profile div:last-child {
 	border-radius: 0 0 8px 8px;
 }
 
 
-
-.identity
-{
+.identity {
 	flex-direction: column;
 	row-gap: 16px;
 	align-items: center;
 
 	display: flex;
 }
-.portrait
-{
+.portrait {
 	border-radius: 96px;
 	width: 192px;
 	height: 192px;
 
 	pointer-events: none;
 }
-.name
-{
+.name {
 	font-size: 32px;
 	font-weight: bold;
 }
-.career
-{
+.career {
 	font-size: 16px;
 }
 
 
-
-.social-links
-{
+.social-links {
 	flex-direction: row;
 	column-gap: 8px;
 
 	display: flex;
 }
-.social-links a img
-{
+.social-links a img {
 	width: 24px; 
 	height: 24px;
 }
-.social-links a:hover
-{
+.social-links a:hover {
 	animation-name: jumpy;
 	animation-duration: 500ms;
 }
 
 
-
-.skills
-{
+.skills {
 	flex-direction: row;
       flex-wrap: wrap;
 	column-gap: 4px;
@@ -87,8 +72,7 @@
 
 	display: flex;
 }
-.skill-item
-{
+.skill-item {
 	border-radius: 8px;
 	padding: 8px;
 
@@ -96,8 +80,7 @@
 
 	font-size: 16px;
 }
-.skill-item:hover
-{
+.skill-item:hover {
 	animation-name: jumpy;
 	animation-duration: 500ms;
 }

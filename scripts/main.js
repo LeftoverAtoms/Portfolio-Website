@@ -1,18 +1,16 @@
-function RemoveBlogs()
-{
-	const x = document.querySelector('.blog-content');
-
-	console.log(x.children.length);
-
-	for (let i = 0; i < x.children.length; i++) {
-		if (x.children[i].className == "blog-entry") {
-			x.children[i].style.display = "none";
-		}
-	}
+function LoadBlog() {
+	// Unhide blog
+	document.querySelector(".blog").style.display = "flex";
+	
+	HideBlogs();
 }
 
-function LoadBlog() {
-	document.querySelector(".blog").style.display = "initial";
-	
-	RemoveBlogs();
+function HideBlogs() {
+	const children = document.querySelector('.blogs').children;
+
+	for (let i = 0; i < children.length; i++) {
+		if (children[i].className == "blog-entry") {
+			children[i].style.display = "none";
+		}
+	}
 }

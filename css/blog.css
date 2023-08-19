@@ -1,55 +1,50 @@
-main
-{
-      display: grid;
-
-      padding: 64px;
-}
-
-.blog
-{
+.blog {
+      position: absolute;
       flex-direction: column;
       align-items: center;
       justify-self: center;
-      gap: 32px;
+      gap: 4px;
 
-      display: flex;
+      display: none;
 
-      width: 1080px;
+      width: inherit;
+	height: max-content;
 }
 
-.name
-{
-      font-size: 2em;
+.blog-header {
+      border-radius: 8px 8px 0px 0px;
+      box-sizing: border-box;
+      width: inherit;
+      padding: 12px;
+
+      background: #2a2a2a;
+
+      text-align: center;
+}
+.blog-title {
+      font-size: 32px;
       font-weight: bold;
 }
 
-.segment
-{
+.blog-content {
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      justify-self: center;
+      gap: 4px;
 
       display: flex;
 
-      width: 100%;
-      padding: 32px;
+      box-sizing: border-box;
+      width: inherit;
+      height: inherit;
+      padding: 24px;
 
       background: #2a2a2a;
 }
 
-h1
-{
-      padding: 16px;
+p {
+      padding: 16px 96px 0px 96px;
 
-      font-size: 4em;
-      font-weight: bold;
-}
-
-p
-{
-      width: 75%;
-      padding: 16px;
-
-      font-size: 1em;
+      font-size: 1.10em;
       text-align: center;
 }
