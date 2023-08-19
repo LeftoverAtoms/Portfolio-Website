@@ -1,13 +1,26 @@
+main
+{
+      display: grid;
+
+      padding: 64px;
+}
+
 .blog
 {
       flex-direction: column;
       align-items: center;
-      gap: 64px;
+      justify-self: center;
+      gap: 32px;
 
       display: flex;
 
-      margin: 16px auto 0 auto;
       width: 1080px;
+}
+
+.name
+{
+      font-size: 2em;
+      font-weight: bold;
 }
 
 .segment
@@ -18,24 +31,10 @@
 
       display: flex;
 
-      border-radius: 16px;
       width: 100%;
       padding: 32px;
 
       background: #2a2a2a;
-}
-
-.segment img
-{
-      width: 960px;
-}
-
-.name
-{
-      padding: 16px;
-
-      font-size: 2em;
-      font-weight: bold;
 }
 
 h1
@@ -52,4 +51,5 @@ p
       padding: 16px;
 
       font-size: 1em;
+      text-align: center;
 }

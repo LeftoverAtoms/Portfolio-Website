@@ -8,64 +8,62 @@
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
+	<link href="css/profile.css" rel="stylesheet">
 
 	<title>leftoveratoms.dev</title>
 	<link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico">
-
-	<meta name="viewport" content="width=device-width, initial-scale=0.9"> 
 </head>
 <body>
 	<main>
 		<div class="content">
-			<article class="profile"></article>
+			<article class="profile">
+				<div class="identity">
+					<img class="portrait" src='./images/icons/profile-picture.png' />
+					<span class="name">Adam Calvelage</span>
+					<span class="career">Software Developer</span>
+				</div>
+				<div class="skills">
+					<span class="skill-item">C#</span>
+					<span class="skill-item">LUA</span>
+					<span class="skill-item">HTML</span>
+					<span class="skill-item">Unity</span>
+					<span class="skill-item">Blender</span>
+				</div>
+			</article>
 			<article class="blog-content">
-				<button id="b-1" class="blog-entry" onclick="LoadBlog(id)">
-						<span class="blog-entry-title">
-							SumiRiko
-						</span>
-						<span class="blog-entry-date">
-							4/20/2023
-						</span>
+				<!-- Element that gets toggled ON/OFF -->
+				<div class="blog">
+					<span class="blog-title">Foot in the Door - Nothing Short of a Miracle</span>
+				</div>
+
+				<!-- Most recent entries appear here -->
+				<button id="b-1" class="blog-entry" onclick="LoadBlog()">
+						<span class="blog-entry-title">SumiRiko</span>
 						<span class="blog-entry-description">
 							Developed virtual job training software using Unity XR
 						</span>
-						<img src="./images/thumbnails/code.jpg">
+						<span class="blog-entry-date">4/20/2023</span>
 				</button>
-				<button id="b-2" class="blog-entry" onclick="LoadBlog(id)">
-						<span class="blog-entry-title">
-							First Blog
-						</span>
-						<span class="blog-entry-date">
-							5/2/2023
-						</span>
+				<button id="b-2" class="blog-entry" onclick="LoadBlog()">
+						<span class="blog-entry-title">First Blog</span>
 						<span class="blog-entry-description">
 							Lets shed some light on the development process of designing my own personal website
 						</span>
-						<img src="./images/thumbnails/temp.png">
+						<span class="blog-entry-date">5/2/2023</span>
 				</button>
-				<button id="b-3" class="blog-entry" onclick="LoadBlog(id)">
-						<span class="blog-entry-title">
-							SumiRiko
-						</span>
-						<span class="blog-entry-date">
-							4/20/2023
-						</span>
+				<button id="b-3" class="blog-entry" onclick="LoadBlog()">
+						<span class="blog-entry-title">SumiRiko</span>
 						<span class="blog-entry-description">
 							Developed virtual job training software using Unity XR
 						</span>
-						<img src="./images/thumbnails/code.jpg">
+						<span class="blog-entry-date">4/20/2023</span>
 				</button>
-				<button id="b-4" class="blog-entry" onclick="LoadBlog(id)">
-						<span class="blog-entry-title">
-							First Blog
-						</span>
-						<span class="blog-entry-date">
-							5/2/2023
-						</span>
+				<button id="b-4" class="blog-entry" onclick="LoadBlog()">
+						<span class="blog-entry-title">First Blog</span>
 						<span class="blog-entry-description">
 							Lets shed some light on the development process of designing my own personal website
 						</span>
-						<img src="./images/thumbnails/temp.png">
+						<span class="blog-entry-date">5/2/2023</span>
 				</button>
 			</article>
 		</div>

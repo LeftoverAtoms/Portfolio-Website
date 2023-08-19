@@ -1,12 +1,9 @@
-:root
-{
+:root {
 	color-scheme: dark; /* Scrollbar */
 }
 
-main
-{
-	min-width: 100vw;
-	min-height: 100vh;
+main {
+	height: 100vh;
 
 	background: #111111;
 

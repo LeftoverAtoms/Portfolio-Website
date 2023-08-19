@@ -6,5 +6,5 @@
       "links": {
             "github":  { "link": "https://github.com/LeftoverAtoms",  "icon": "./images/icons/github.png"  },
             "twitter": { "link": "https://twitter.com/LeftoverAtoms", "icon": "./images/icons/twitter.png" } },
-      "skills": ["C#", "C++", "LUA", "HTML", "CSS", "JS", "Unity", "Blender"]
+      "skills": ["C#", "LUA", "HTML", "Unity", "Blender"]
 }
