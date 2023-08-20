@@ -17,13 +17,11 @@
 .content {
 	flex-direction: row;
 	align-content: center;
-	justify-content: center;
+	justify-content: left;
 	gap: 32px;
 
 	display: flex;
-
-	padding-left: calc((100vw * 0.5) - (1280px * 0.5));
-	padding-top: calc((100vh * 0.5) - (720px * 0.5));
+	
 	width: 1280px;
 	height: 720px;
 }
@@ -37,7 +35,7 @@
 
 	display: flex;
 
-	width: 856px;
+	width: 864px;
 	height: 328px;
 }
 

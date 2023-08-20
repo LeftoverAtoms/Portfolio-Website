@@ -3,9 +3,16 @@
 }
 
 main {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	display: flex;
+
+	width: 100vw;
 	height: 100vh;
 
-	background: #111111;
+	background-color: #111111;
 
 	font-family: 'Roboto', sans-serif; /* Default font */
 }
